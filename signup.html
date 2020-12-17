@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <meta name="keywords" content="form, HTML, CSS">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="form">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="simpleform.js" defer></script>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0px;
+         padding: 0px;
+        }
+        body{
+        width: 100%;
+        background-color: #fcacad;
+        font-family: arial;
+        }
+        h2{
+        	text-align: center;
+        	margin-top: 5rem;
+        }
+        .container{
+        color: white;
+        width: 25%;
+        margin: 1rem auto;
+        background-color: #253042;
+        padding: 2.2rem;
+        border:  1px solid black;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px black;
+        }
+        form{
+        	margin-top: 10px;
+        }
+        input{
+        	width: 100%;
+        	display: block;
+        	padding: 7px;
+            border: 1px solid gray;
+        }
+        button{
+        	width: 100%;
+        	padding: 6px;
+        	background-color: #e73334;
+        	color: white;
+        	border: 1px solid black;
+        	box-shadow:  0px 2px 3px black;
+        	border-radius: 5px;
+        	margin-top: 10px;
+            outline: none;
+        }
+        button:hover{
+            opacity: .5;
+        }
+        p{
+        	margin-bottom: 20px;
+        }
+        i{
+        	position: absolute;
+        	margin-top: -25px;
+        	margin-left: 250px;
+        	
+        }
+        .fa-exclamation-circle, .error{
+        	color: red;
+        }
+        .fa-check-circle{
+        	color: green;
+        }
+        .error{
+        	color:white;
+            background-color: red;
+            padding: 2px;
+            visibility: hidden;
+        }
+        .errorClass{
+            border: 2px solid red;
+        }
+        .successClass{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+	<h2>Thank you for visiting my site.</h2>
+	<div class="container">
+	<p>Please fill out the form to register.</p>
+	<form id="form" action="form.html">
+		<label>First Name:</label><br>
+		<input type="text" name="firstName" placeholder="Enter first name">
+			<i class="fa fa-exclamation-circle" style="font-size:20px"></i>
+         	<i class="fa fa-check-circle" style="font-size:20px"></i>
+         	<small class="error">Message</small><br>
+		<label>Surname:</label><br>
+		<input type="text" name="surname" placeholder="Enter surname">
+			<i class="fa fa-exclamation-circle" style="font-size:20px"></i>
+         	<i class="fa fa-check-circle" style="font-size:20px"></i>
+         	<small class="error">Message</small><br>
+		<label>Email:</label><br>
+		<input type="Email" name="Email" placeholder="Enter valid Email">
+			<i class="fa fa-exclamation-circle" style="font-size:20px"></i>
+         	<i class="fa fa-check-circle" style="font-size:20px"></i>
+         	<small class="error">Message</small><br>
+		<label>Password:</label><br>
+		<input type="Password" name="Password" placeholder="Enter Password">
+			<i class="fa fa-exclamation-circle" style="font-size:20px"></i>
+         	<i class="fa fa-check-circle" style="font-size:20px"></i>
+         	<small class="error">Message</small><br>
+		<button type="submit">Register</button>
+	</div>
+	</form>
+</body>
